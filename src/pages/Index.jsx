@@ -46,7 +46,7 @@ const Index = () => {
                 onChange={(e) => setNewTask(e.target.value)}
                 placeholder="Add a new task"
               />
-              <Button onClick={addTask}>Add</Button>
+              <Button onClick={addTask} className="bg-orange-500 hover:bg-orange-600 text-white">Add</Button>
             </div>
             <ScrollArea className="h-64">
               {tasks.map((task) => (
